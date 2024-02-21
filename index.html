@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>webpage clone</title>
+    <script async src="./index.js"></script>
+    <style>
+        @media (max-width:768px) {
+            .toggle-navbar {
+                top: -2%;
+                transition: top 1s ease;
+                background-color: rgb(35, 34, 34, .3);
+            }
+        }
+
+
+        @media (min-width:768px) {
+            #menubar {
+                display: none;
+            }
+        }
+
+        @media (min-width:768px) {
+            #close-menubar {
+                display: none;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="max-h-full ">
+        <nav class="px-32 py-6 max-md:px-4 max-lg:px-12">
+            <ul class="flex justify-between">
+                <li>
+                    <img src="./src/assets/website-logo.png" alt="web-icon" class="cursor-pointer" />
+                </li>
+                <li>
+                    <ul class="mt-2 flex w-full max-md:h-[100vh] max-md:flex-col max-md:text-white max-md:justify-start max-md:gap-4 max-md:absolute top-[-100%] left-0 z-10"
+                        id="navbar">
+                        <i class='bx bx-x mt-20 text-right bx-lg mr-2 close-icon' id="close-menubar"></i>
+                        <li class="mr-8 uppercase hover:underline cursor-pointer text-center  max-md:font-extrabold"><a
+                                href="#">retail</a>
+                        </li>
+                        <li class="mr-8 uppercase hover:underline cursor-pointer text-center max-md:font-extrabold"><a
+                                href="#">sme</a></li>
+                        <li class="mr-8 uppercase hover:underline cursor-pointer text-center max-md:font-extrabold"><a
+                                href="#">corporate</a>
+                        </li>
+                        <li class="mr-8 uppercase hover:underline cursor-pointer text-center max-md:font-extrabold "><a
+                                href="#">covid 19</a>
+                        </li>
+                        <li
+                            class=" uppercase hover:underline cursor-pointer text-center mr-8 translate-x-2 max-md:font-extrabold">
+                            <a href="#">campgains</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="flex">
+                    <img src="./src/assets/search-icon.png" alt="search-icon" class="w-8 h-8 mr-2 cursor-pointer" />
+                    <button class="bg-pink-600 px-4 h-8 hover:opacity-45 cursor-pointer rounded-sm">iservice</button>
+                    <i class='bx bx-menu bx-lg relative bottom-2 max-md:hidden' id="menubar"></i>
+                </li>
+            </ul>
+        </nav>
+        <div class="flex flex-row max-xl:flex-col w-full absolute top-0 z-[-1] ">
+            <div class="basis-[50%] bg-[#ffffff] h-[100vh] pt-28">
+                <div class="absolute z-20 w-full flex justify-center">
+                    <div class=" shadow-custom w-32 p-2 bg-[#ffffff] rounded-full">
+                        <img class="w-8 inline mr-4" src="./src/assets/car.png" alt="car-icon" />
+                        <span>car Loan</span>
+                    </div>
+                </div>
+                <div class="mt-24 px-32 max-xl:px-10 flex flex-col justify-center">
+                    <h1 class=" text-6xl max-md:text-5xl font-extrabold">Choose your dreams with us</h1>
+                    <p class="text-[1.7rem] max-md:text-xl mt-8">
+                        The harder you work for something , the greater you'll feel when you achieve it.
+                    </p>
+                    <div class="flex justify-center mt-10">
+                        <button
+                            class="mr-4 bg-pink-600 text-white px-4 w-full py-2 rounded-lg hover:opacity-70 uppercase">apply
+                            online</button>
+                        <button
+                            class="text-pink-600 px-4 py-2 w-full border border-solid border-red-600 rounded-lg hover:opacity-70 uppercase">loan
+                            calculator</button>
+                    </div>
+                    <div class="mt-16 max-xl:my-10 flex justify-center gap-4">
+                        <img src="./src/assets/phone.png" alt="phone-icon" class="" />
+                        <span>|659 |</span>
+                        <img src="./src/assets/facebook.png" alt="fb-icon" class="" />
+                        <img src="./src/assets/linkedin.png" alt="linkedin-icon" class="" />
+                        <img src="./src/assets/instagram.png" alt="insta-icon" class="" />
+                    </div>
+                </div>
+            </div>
+            <div class="basis-[50%] bg-[#ffeaf5] h-[90vh] pt-28 relative">
+                <div class="flex">
+                    <img src="./src/assets/hero-image.png" alt="hero-icon"
+                        class="max-md:static relative left-[-9rem] top-[-4rem] min-w-[100px]" />
+                    <div
+                        class="shadow-custom w-40 p-2 bg-[#ffffff] rounded-full absolute right-52 top-56 max-xl:right-8 max-md:top-16">
+                        <img class="w-8 inline mr-4" src="./src/assets/House.png" alt="house-icon" />
+                        <span>Home loan</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+</body>
+
+</html>
